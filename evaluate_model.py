@@ -215,7 +215,6 @@ def evaluate_model():
     print("                  FINAL MODEL METRICS")
     print("============================================================")
     print(f"Model Used: {forced_model_name}")
-    print(f"Total Samples Evaluated: {total}")
     print(f"Accuracy: {final_accuracy:.2f}")
     print(f"Precision (Weighted): {final_precision:.2f}")
     print(f"Recall (Weighted): {final_recall:.2f}")

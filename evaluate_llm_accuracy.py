@@ -9,14 +9,12 @@ Runs each model independently and prints only accuracy %
 
 import sys
 from pathlib import Path
-
-# Add src/ path
 ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 
-from inference_api import classify_ticket_via_api, MODEL_OPTIONS   # your logic
-from evaluate_model import TEST_DATASET                            # synthetic dataset
+from inference_api import classify_ticket_via_api, MODEL_OPTIONS   
+from evaluate_model import TEST_DATASET                            
 
 
 def evaluate_model(model_name: str):
